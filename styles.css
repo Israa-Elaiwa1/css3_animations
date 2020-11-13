@@ -1,0 +1,180 @@
+/*star*/
+.star1,.star2{
+  width:100px;
+  height:100px;
+  border:10px solid green;
+  position: absolute;
+  margin-left: 700px;
+  margin-bottom: 100px;
+}
+.star2{
+  transform: rotate(50deg);
+  position: relative;
+
+}
+/*traffic lights*/
+.container{
+  background-color: gray;
+  height:250px;
+  width:100px;
+  border: 5px solid black;
+  margin:50px auto 0 auto;
+}
+.trafficLight{
+  height:250px;
+  width:30px;
+  background-color: black;
+  margin: 0 auto 100px auto;
+}
+
+.redLight{
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  background-color: black;
+  margin:20px auto;
+  animation-name: red;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count:infinite;
+}
+@keyframes red {
+  0%   {background-color:red;}
+  100%  {background-color:black;}
+}
+
+.greenLight{
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  background-color: black;
+  margin:20px auto;
+  animation-name: green;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes green {
+  0%   {background-color:green;}
+  100%  {background-color:black;}
+}
+.yellowLight{
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  background-color: black;
+  margin:20px auto;
+  animation-name: orange;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count:infinite;
+
+}
+@keyframes orange {
+  0%   {background-color:orange;}
+  100%  {background-color:black;}
+}
+/*cars*/
+
+.road{
+  width:100%;
+  height:500px;
+  background-color: gray;
+  position: relative;
+  margin: 100px auto 100px auto;
+}
+img{
+  height:150px;
+  width:150px;
+  position: relative;
+  display: block;
+}
+.red_car{
+  animation-name: car_one;
+  animation-duration: 3s;
+  animation-delay: 0.3s;
+  animation-iteration-count:infinite;
+
+}
+@keyframes car_one {
+    from {left: 0px;}
+    to {left: 1000px;}
+  }
+.blue_car{
+  animation-name: car_two;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes car_two {
+    from {left: 0px;}
+    to {left: 1000px;}
+  }
+  .green_car{
+    animation-name: car_three;
+    animation-duration: 3s;
+    animation-delay: 0.7s;
+    animation-iteration-count:infinite;
+  }
+  @keyframes car_three {
+      from {left: 0px;}
+      to {left: 1000px;}
+    }
+    /*zoom in*/
+     .zoom-text{
+      color:#9ad3bc;
+      text-align: center;
+      margin-top:70px;
+    }
+    .zoom-in{
+      width:600px;
+      height:300px;
+      background-color: white;
+      border:solid 3px #9ad3bc;
+      margin: 100px auto 100px auto;
+      font-size: 2px;
+    }
+    .zoom-in:hover{
+      font-size:50px;
+    }
+
+   /*clock*/
+
+   .mini-clock{
+     width:20px;
+     height:20px;
+     border-radius: 50%;
+     border:5px solid #8bcdcd;
+     margin: 100px auto 0 auto;
+
+   }
+
+   .clock{
+     width:100px;
+     height:100px;
+     border-radius: 50%;
+     border:20px solid #8bcdcd;
+     margin:0 auto;
+   }
+   .clock-line{
+     width:10px;
+     height:50px;
+     background-color: #8bcdcd;
+     margin: 20px auto 10px auto;
+     animation-name: clock;
+     animation-duration: 2s;
+     animation-delay: 0.5s;
+     animation-iteration-count:infinite;
+   }
+   .clock-line:hover{
+     animation-play-state: paused;
+   }
+   @keyframes clock {
+     from {
+         transform: rotate(0deg);
+       }
+       to {
+         transform: rotate(360deg);
+       }   }
